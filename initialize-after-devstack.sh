@@ -9,3 +9,6 @@ openstack security group rule create --protocol tcp --dst-port 22:22 --remote-ip
 
 nova boot --nic net-name=private --flavor m1.nano --image ${imgid} --key-name key01 --security-groups default vm01
 
+# for developing with 'tox -e py35'
+sudo apt install python3-dev
+
